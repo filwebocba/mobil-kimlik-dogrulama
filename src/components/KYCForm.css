@@ -1,0 +1,107 @@
+.kyc-form {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form-header h2 {
+  color: #2d3748;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.form-header p {
+  color: #718096;
+  font-size: 14px;
+}
+
+.form-section {
+  margin-bottom: 32px;
+}
+
+.form-section h3 {
+  color: #2d3748;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* Başarı Sayfası */
+.kyc-success {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+  font-size: 80px;
+  margin-bottom: 24px;
+}
+
+.kyc-success h2 {
+  color: #2d3748;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.kyc-success p {
+  color: #718096;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .kyc-form {
+    padding: 20px;
+    margin: 0 -5px 20px -5px;
+    border-radius: 8px;
+  }
+  
+  .form-header h2 {
+    font-size: 22px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .kyc-success {
+    padding: 40px 20px;
+    margin: 0 -5px;
+    border-radius: 8px;
+  }
+  
+  .kyc-success h2 {
+    font-size: 24px;
+  }
+  
+  .success-icon {
+    font-size: 60px;
+  }
+} 

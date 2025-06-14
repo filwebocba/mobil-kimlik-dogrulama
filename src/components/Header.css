@@ -1,0 +1,77 @@
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icon {
+  font-size: 28px;
+}
+
+.admin-button,
+.kyc-button {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.admin-button:hover,
+.kyc-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+.admin-icon,
+.back-icon {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 15px;
+  }
+  
+  .header-title {
+    font-size: 20px;
+  }
+  
+  .header-icon {
+    font-size: 24px;
+  }
+  
+  .admin-button,
+  .kyc-button {
+    padding: 10px 12px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+} 
